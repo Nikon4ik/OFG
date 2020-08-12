@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Document</title>
 </head>
@@ -19,9 +20,18 @@
 				</ul>
 				<a href="#">Выбрать пакет</a>
 			</div>
-			<label for="menu"><img src="media/icons/menu.png" alt="menu"></label>
+			<div class="menuBar_wrapper">
+				<div class="menuBar"></div>
+			</div>
 		</div>
 	</header>
+	<div id="menu">
+		<ul>
+			<li><a href="#">Результаты</a></li>
+			<li><a href="#">О марафоне</a></li>
+			<li><a href="#">Программа</a></li>
+		</ul>
+	</div>
 	<section id="first_screen">
 		<div class="container">
 			<div class="col-1-2">
@@ -90,5 +100,246 @@
 			</div>
 		</div>
 	</section>
+	<section id="third_screen">
+		<div class="container">
+			<div class="col-1-2">
+				<img src="media/15000+.svg" alt="15000+">
+				<h3>Более 15 000 человек сталкивались с такими же трудностями, пока не узнали про <span>Online Fitness Games</span></h3>
+			</div>
+			<div class="col-1-2">
+				<div class="mentor">
+					<p class="p1">Наталия Ерохина</p>
+					<p class="p2">Тренер марафона</p>
+				</div>
+				<div class="third_background">
+					<img src="media/woman.png" alt="woman">
+					<img src="media/third_background.svg" alt="third_background">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="fourth_screen">
+		<div class="container">
+			<div class="heading">
+				<h2 class="col-1-2">Результаты участников прошлых наборов</h2>
+				<p class="p1">Такие же люди, как вы, со всего СНГ уже прошли марафон Online Fitness Games. 87% из них добились поставленной на старте цели. </p>
+			</div>
+			<div class="slider">
+				<div class="slide">
+					<div class="col-1-2">
+						<div class="slide_image">
+							<img src="media/slider/slide1.png" alt="slide1">
+						</div>
+					</div>
+					<div class="col-1-2">
+						<div class="figures">
+							<span>01 / 05</span>
+							<img src="media/87%.svg" alt="87%">
+						</div>
+						<div class="info">
+							<div>
+								<p class="p2">Алёна, Харьков</p>
+								<p>
+									До декрета регулярно занималась в зале. С рождением дочки не находила времени на спорт. Решила попробовать онлайн-марафон OFG. Теперь регулярно занимается с Натальей Ерохиной удаленно, в удобное время.
+								</p>
+							</div>
+							<div>
+								<p>
+									<img src="media/icons/calendar.svg" alt="calendar">
+									Участвовала
+									</br>
+									<span>03.06-24.06.20</span>
+								</p>
+								<p>
+									<img src="media/icons/weight.svg" alt="weight">
+									Результат
+									</br>
+									<span>-5 кг</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="col-1-2">
+						<div class="slide_image">
+							<img src="media/slider/slide1.png" alt="slide1">
+						</div>
+					</div>
+					<div class="col-1-2">
+						<div class="figures">
+							<span>01 / 05</span>
+							<img src="media/87%.svg" alt="87%">
+						</div>
+						<div class="info">
+							<div>
+								<p class="p2">Алёна, Харьков</p>
+								<p>
+									До декрета регулярно занималась в зале. С рождением дочки не находила времени на спорт. Решила попробовать онлайн-марафон OFG. Теперь регулярно занимается с Натальей Ерохиной удаленно, в удобное время.
+								</p>
+							</div>
+							<div>
+								<p>
+									<img src="media/icons/calendar.svg" alt="calendar">
+									Участвовала
+									</br>
+									<span>03.06-24.06.20</span>
+								</p>
+								<p>
+									<img src="media/icons/weight.svg" alt="weight">
+									Результат
+									</br>
+									<span>-5 кг</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="col-1-2">
+						<div class="slide_image">
+							<img src="media/slider/slide1.png" alt="slide1">
+						</div>
+					</div>
+					<div class="col-1-2">
+						<div class="figures">
+							<span>01 / 05</span>
+							<img src="media/87%.svg" alt="87%">
+						</div>
+						<div class="info">
+							<div>
+								<p class="p2">Алёна, Харьков</p>
+								<p>
+									До декрета регулярно занималась в зале. С рождением дочки не находила времени на спорт. Решила попробовать онлайн-марафон OFG. Теперь регулярно занимается с Натальей Ерохиной удаленно, в удобное время.
+								</p>
+							</div>
+							<div>
+								<p>
+									<img src="media/icons/calendar.svg" alt="calendar">
+									Участвовала
+									</br>
+									<span>03.06-24.06.20</span>
+								</p>
+								<p>
+									<img src="media/icons/weight.svg" alt="weight">
+									Результат
+									</br>
+									<span>-5 кг</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="col-1-2">
+						<div class="slide_image">
+							<img src="media/slider/slide1.png" alt="slide1">
+						</div>
+					</div>
+					<div class="col-1-2">
+						<div class="figures">
+							<span>01 / 05</span>
+							<img src="media/87%.svg" alt="87%">
+						</div>
+						<div class="info">
+							<div>
+								<p class="p2">Алёна, Харьков</p>
+								<p>
+									До декрета регулярно занималась в зале. С рождением дочки не находила времени на спорт. Решила попробовать онлайн-марафон OFG. Теперь регулярно занимается с Натальей Ерохиной удаленно, в удобное время.
+								</p>
+							</div>
+							<div>
+								<p>
+									<img src="media/icons/calendar.svg" alt="calendar">
+									Участвовала
+									</br>
+									<span>03.06-24.06.20</span>
+								</p>
+								<p>
+									<img src="media/icons/weight.svg" alt="weight">
+									Результат
+									</br>
+									<span>-5 кг</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="col-1-2">
+						<div class="slide_image">
+							<img src="media/slider/slide1.png" alt="slide1">
+						</div>
+					</div>
+					<div class="col-1-2">
+						<div class="figures">
+							<span>01 / 05</span>
+							<img src="media/87%.svg" alt="87%">
+						</div>
+						<div class="info">
+							<div>
+								<p class="p2">Алёна, Харьков</p>
+								<p>
+									До декрета регулярно занималась в зале. С рождением дочки не находила времени на спорт. Решила попробовать онлайн-марафон OFG. Теперь регулярно занимается с Натальей Ерохиной удаленно, в удобное время.
+								</p>
+							</div>
+							<div>
+								<p>
+									<img src="media/icons/calendar.svg" alt="calendar">
+									Участвовала
+									</br>
+									<span>03.06-24.06.20</span>
+								</p>
+								<p>
+									<img src="media/icons/weight.svg" alt="weight">
+									Результат
+									</br>
+									<span>-5 кг</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="col-1-2">
+						<div class="slide_image">
+							<img src="media/slider/slide1.png" alt="slide1">
+						</div>
+					</div>
+					<div class="col-1-2">
+						<div class="figures">
+							<span>01 / 05</span>
+							<img src="media/87%.svg" alt="87%">
+						</div>
+						<div class="info">
+							<div>
+								<p class="p2">Алёна, Харьков</p>
+								<p>
+									До декрета регулярно занималась в зале. С рождением дочки не находила времени на спорт. Решила попробовать онлайн-марафон OFG. Теперь регулярно занимается с Натальей Ерохиной удаленно, в удобное время.
+								</p>
+							</div>
+							<div>
+								<p>
+									<img src="media/icons/calendar.svg" alt="calendar">
+									Участвовала
+									</br>
+									<span>03.06-24.06.20</span>
+								</p>
+								<p>
+									<img src="media/icons/weight.svg" alt="weight">
+									Результат
+									</br>
+									<span>-5 кг</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
