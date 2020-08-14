@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Document</title>
 </head>
@@ -12,34 +12,28 @@
 	<header>
 		<div class="container">
 			<img src="media/logo.svg" alt="logo">
-			<div>
+			<a href="#" class="lang"><span>RU</span><span>EN</span></a>
+			<div class="smooth">
 				<ul>
-					<li><a href="#">Результаты</a></li>
-					<li><a href="#">О марафоне</a></li>
-					<li><a href="#">Программа</a></li>
+					<li><a href="#fourth_screen">Результаты</a></li>
+					<li><a href="#sixth_screen">О марафоне</a></li>
+					<li><a href="#seventh_screen">Программа</a></li>
 				</ul>
-				<a href="#">Выбрать пакет</a>
+				<a href="#eighth_screen">Выбрать пакет</a>
 			</div>
-			<div class="menuBar_wrapper">
+			<div class="menuBar_wrapper" data-modal="modal-12">
 				<div class="menuBar"></div>
 			</div>
 		</div>
 	</header>
-	<div id="menu">
-		<ul>
-			<li><a href="#">Результаты</a></li>
-			<li><a href="#">О марафоне</a></li>
-			<li><a href="#">Программа</a></li>
-		</ul>
-	</div>
 	<section id="first_screen">
 		<div class="container">
-			<div class="col-1-2">
+			<div class="col-1-2 smooth">
 				<p>марафон</p>
 				<h1>трансформация</h1>
 				<p class="p1">Всего за 21 день вы измените <span id="animation_text">свое тело</span></br> к лучшему</p>
 				<p class="p1 adaptive_p">Всего за 21 день вы измените </br>свое тело к лучшему</p>
-				<a href="#">Принять участие</a>
+				<a href="#eighth_screen">Принять участие</a>
 			</div>
 			<div class="col-1-2">
 				<ul>
@@ -108,8 +102,8 @@
 			</div>
 			<div class="col-1-2">
 				<div class="mentor">
-					<p class="p1">Наталия Ерохина</p>
-					<p class="p2">Тренер марафона</p>
+					<p class="p1">Наталия </br>Ерохина</p>
+					<p class="p2">Тренер </br>марафона</p>
 				</div>
 				<div class="third_background">
 					<img src="media/woman.png" alt="woman">
@@ -124,6 +118,11 @@
 				<h2 class="col-1-2">Результаты участников прошлых наборов</h2>
 				<p class="p1">Такие же люди, как вы, со всего СНГ уже прошли марафон Online Fitness Games. 87% из них добились поставленной на старте цели. </p>
 			</div>
+			<div class="count">
+				<p>0<span id="cp">1</span> / 05</p>
+				<img src="media/87%.svg" alt="87%">
+			</div>
+			<div class="slider-arrow"></div>
 			<div class="slider">
 				<div class="slide">
 					<div class="col-1-2">
@@ -132,10 +131,6 @@
 						</div>
 					</div>
 					<div class="col-1-2">
-						<div class="figures">
-							<span>01 / 05</span>
-							<img src="media/87%.svg" alt="87%">
-						</div>
 						<div class="info">
 							<div>
 								<p class="p2">Алёна, Харьков</p>
@@ -163,33 +158,29 @@
 				<div class="slide">
 					<div class="col-1-2">
 						<div class="slide_image">
-							<img src="media/slider/slide1.png" alt="slide1">
+							<img src="media/slider/slide2.jpg" alt="slide2">
 						</div>
 					</div>
 					<div class="col-1-2">
-						<div class="figures">
-							<span>01 / 05</span>
-							<img src="media/87%.svg" alt="87%">
-						</div>
 						<div class="info">
 							<div>
-								<p class="p2">Алёна, Харьков</p>
+								<p class="p2">Дмитрий, Москва</p>
 								<p>
-									До декрета регулярно занималась в зале. С рождением дочки не находила времени на спорт. Решила попробовать онлайн-марафон OFG. Теперь регулярно занимается с Натальей Ерохиной удаленно, в удобное время.
+									Полгода занимался в фитнес-центре, но результата не было: хотел набрать мышечную массу и стать более рельефным. Сдвинулся с мертвой точки на марафоне и стал заниматься онлайн с тренером OFG.
 								</p>
 							</div>
 							<div>
 								<p>
 									<img src="media/icons/calendar.svg" alt="calendar">
-									Участвовала
+									Участвовал
 									</br>
-									<span>03.06-24.06.20</span>
+									<span>04.05-25.05.20</span>
 								</p>
 								<p>
 									<img src="media/icons/weight.svg" alt="weight">
 									Результат
 									</br>
-									<span>-5 кг</span>
+									<span>-4 кг</span>
 								</p>
 							</div>
 						</div>
@@ -198,19 +189,15 @@
 				<div class="slide">
 					<div class="col-1-2">
 						<div class="slide_image">
-							<img src="media/slider/slide1.png" alt="slide1">
+							<img src="media/slider/slide3.jpg" alt="slide3">
 						</div>
 					</div>
 					<div class="col-1-2">
-						<div class="figures">
-							<span>01 / 05</span>
-							<img src="media/87%.svg" alt="87%">
-						</div>
 						<div class="info">
 							<div>
-								<p class="p2">Алёна, Харьков</p>
+								<p class="p2">Татьяна, Ижевск</p>
 								<p>
-									До декрета регулярно занималась в зале. С рождением дочки не находила времени на спорт. Решила попробовать онлайн-марафон OFG. Теперь регулярно занимается с Натальей Ерохиной удаленно, в удобное время.
+									Впервые проходила онлайн-марафон и стала нашей рекордсменкой. Не пропустила ни одну тренировку, просила еще, и сказала, что полностью изменила образ жизни после OFG.
 								</p>
 							</div>
 							<div>
@@ -224,7 +211,7 @@
 									<img src="media/icons/weight.svg" alt="weight">
 									Результат
 									</br>
-									<span>-5 кг</span>
+									<span>-9 кг</span>
 								</p>
 							</div>
 						</div>
@@ -233,25 +220,21 @@
 				<div class="slide">
 					<div class="col-1-2">
 						<div class="slide_image">
-							<img src="media/slider/slide1.png" alt="slide1">
+							<img src="media/slider/slide4.jpg" alt="slide4">
 						</div>
 					</div>
 					<div class="col-1-2">
-						<div class="figures">
-							<span>01 / 05</span>
-							<img src="media/87%.svg" alt="87%">
-						</div>
 						<div class="info">
 							<div>
-								<p class="p2">Алёна, Харьков</p>
+								<p class="p2">Владимир, Санкт-Петербург </p>
 								<p>
-									До декрета регулярно занималась в зале. С рождением дочки не находила времени на спорт. Решила попробовать онлайн-марафон OFG. Теперь регулярно занимается с Натальей Ерохиной удаленно, в удобное время.
+									Один из победителей прошло марафона, который удивил всех, включая тренеров своим результатом и трансформацией.
 								</p>
 							</div>
 							<div>
 								<p>
 									<img src="media/icons/calendar.svg" alt="calendar">
-									Участвовала
+									Участвовал
 									</br>
 									<span>03.06-24.06.20</span>
 								</p>
@@ -259,7 +242,7 @@
 									<img src="media/icons/weight.svg" alt="weight">
 									Результат
 									</br>
-									<span>-5 кг</span>
+									<span>-3 кг</span>
 								</p>
 							</div>
 						</div>
@@ -268,19 +251,15 @@
 				<div class="slide">
 					<div class="col-1-2">
 						<div class="slide_image">
-							<img src="media/slider/slide1.png" alt="slide1">
+							<img src="media/slider/slide5.jpg" alt="slide5">
 						</div>
 					</div>
 					<div class="col-1-2">
-						<div class="figures">
-							<span>01 / 05</span>
-							<img src="media/87%.svg" alt="87%">
-						</div>
 						<div class="info">
 							<div>
-								<p class="p2">Алёна, Харьков</p>
+								<p class="p2">Марина, Киев</p>
 								<p>
-									До декрета регулярно занималась в зале. С рождением дочки не находила времени на спорт. Решила попробовать онлайн-марафон OFG. Теперь регулярно занимается с Натальей Ерохиной удаленно, в удобное время.
+									До этого занималась спортом последний раз в школе. Выполнила все задания тренеров и продолжает заниматься с тренером персонально.
 								</p>
 							</div>
 							<div>
@@ -288,48 +267,13 @@
 									<img src="media/icons/calendar.svg" alt="calendar">
 									Участвовала
 									</br>
-									<span>03.06-24.06.20</span>
+									<span>04.05-25.05.20</span>
 								</p>
 								<p>
 									<img src="media/icons/weight.svg" alt="weight">
 									Результат
 									</br>
-									<span>-5 кг</span>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="col-1-2">
-						<div class="slide_image">
-							<img src="media/slider/slide1.png" alt="slide1">
-						</div>
-					</div>
-					<div class="col-1-2">
-						<div class="figures">
-							<span>01 / 05</span>
-							<img src="media/87%.svg" alt="87%">
-						</div>
-						<div class="info">
-							<div>
-								<p class="p2">Алёна, Харьков</p>
-								<p>
-									До декрета регулярно занималась в зале. С рождением дочки не находила времени на спорт. Решила попробовать онлайн-марафон OFG. Теперь регулярно занимается с Натальей Ерохиной удаленно, в удобное время.
-								</p>
-							</div>
-							<div>
-								<p>
-									<img src="media/icons/calendar.svg" alt="calendar">
-									Участвовала
-									</br>
-									<span>03.06-24.06.20</span>
-								</p>
-								<p>
-									<img src="media/icons/weight.svg" alt="weight">
-									Результат
-									</br>
-									<span>-5 кг</span>
+									<span>-7,5 кг</span>
 								</p>
 							</div>
 						</div>
@@ -338,8 +282,420 @@
 			</div>
 		</div>
 	</section>
+	<section id="fifth_screen">
+		<div class="container">
+			<div class="col-1-2">
+				<h3>Результат каждого из них и тысяч других участников — </br>это 1 правильное решение, которое нужно принять сейчас</h3>
+				<button class="md-trigger" data-modal="modal-12">Записаться на марафон</button>
+			</div>
+			<div class="col-1-2">
+				<div class="mentor">
+					<p class="p1">Александр </br>Кравченко</p>
+					<p class="p2">Тренер </br>марафона</p>
+				</div>
+				<div class="fifth_background">
+					<img src="media/man.png" alt="man">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="sixth_screen">
+		<div class="container">
+			<div class="col-1-2">
+				<p>о Марафоне</p>
+				<h2>Трансформация</h2>
+				<p class="p1">Онлайн-марафон от Online Fitness Games, </br>на котором вы за 21 день измените свое тело, привычки, питание, образ жизни к лучшему</p>
+			</div>
+			<div class="col-1-2">
+				<div class="item">
+					<img src="media/diet.png" alt="diet">
+					<p class="p2">Даем рекомендации по рациону</p>
+					<p>Контролируем питание, делимся советами по режиму дня</p>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="item">
+					<img src="media/homework.jpg" alt="homework">
+					<p class="p2">Даем все упражнения, домашние задания и проводим эфиры</p>
+					<p>Чтобы вы занимались безопасно, технично и эффективно</p>
+				</div>
+			</div>
+			<div class="col-1-3 middle">
+				<div class="item centered">
+					<p class="p2">Подбираем нагрузку под ваш уровень и цели</p>
+					<p>Проводим тест-тренировку, фиксируем вес и делаем фото на старте</p>
+					<img src="media/selection.png" alt="selection">
+				</div>
+			</div>
+			<div class="col-1-3 adaptive">
+				<div class="item">
+					<img src="media/selection.png" alt="selection">
+					<p class="p2">Подбираем нагрузку под ваш уровень и цели</p>
+					<p>Проводим тест-тренировку, фиксируем вес и делаем фото на старте</p>
+				</div>
+			</div>
+			<div class="col-1-3 last">
+				<div class="item">
+					<img src="media/motivation.png" alt="motivation">
+					<p class="p2">Поддерживаем и мотивируем</p>
+					<p>Чат с тренером, чат сообщества, ответы на любые вопросы, призы для лучших участников</p>
+				</div>
+			</div>
+			<div class="sixth_background">
+				<img src="media/sixth_background.svg" alt="sixth_background">
+				<img src="media/transformation.svg" alt="transformation">
+			</div>
+		</div>
+	</section>
+	<section id="seventh_screen">
+		<div class="container">
+			<div class="heading">
+				<h2 class="col-1-2">Программа </br>марафона</h2>
+				<p class="p1">21 день, чтобы изменить себя и свой образ жизни без надрыва с поддержкой профессиональных, дипломированных тренеров</p>
+			</div>
+			<div class="weeks">
+				<img src="media/weeks.svg" alt="weeks">
+				<div class="week first">
+					<div class="headline">
+						<span>Неделя 1</span>
+						<span>03.08-09.08</span>
+					</div>
+					<div class="item first">
+						<img src="media/icons/check.svg" alt="check">
+						<p class="p2">Тест на </br>определение </br>уровня сложности</p>
+					</div>
+					<div class="item">
+						<img src="media/icons/dumbbell.svg" alt="dumbbell">
+						<p class="p2">Ежедневные </br>занятия на все </br>группы мышц</p>
+					</div>
+					<div class="item">
+						<img src="media/icons/food.svg" alt="food">
+						<p class="p2">Рацион и меню на </br>каждый день для </br>мужчин и девушек</p>
+					</div>
+					<div class="item">
+						<img src="media/icons/youtube.svg" alt="youtube">
+						<p class="p2">Прямой эфир с Александром </br>Кравченко и Натальей </br>Ерохиной «Мотивация» </p>
+					</div>
+					<div class="item">
+						<img src="media/icons/youtube.svg" alt="youtube">
+						<p class="p2">Прямой эфир с Виктором </br>Набоком «Качаем пресс </br>правильно»</p>
+					</div>
+				</div>
+				<div class="week">
+					<div class="headline">
+						<span>Неделя 2</span>
+						<span>10.08-16.08</span>
+					</div>
+					<div class="item first">
+						<img src="media/icons/dumbbell.svg" alt="dumbbell">
+						<p class="p2">Ежедневные </br>занятия на все </br>группы мышц</p>
+					</div>
+					<div class="item">
+						<img src="media/icons/food.svg" alt="food">
+						<p class="p2">Рацион и меню на </br>каждый день для </br>мужчин и девушек</p>
+					</div>
+					<div class="item">
+						<img src="media/icons/youtube.svg" alt="youtube">
+						<p class="p2">Прямой эфир с Александром Кравченко </br>и Натальей Ерохиной «Промежуточные </br>результаты марафона»</p>
+					</div>
+					<div class="item">
+						<img src="media/icons/youtube.svg" alt="youtube">
+						<p class="p2">Прямой эфир с Алёной </br>Шумаковой «Тренировка </br>на ягодицы» </p>
+					</div>
+				</div>
+				<div class="week">
+					<div class="headline">
+						<span>Неделя 3</span>
+						<span>17.08-23.08</span>
+					</div>
+					<div class="item first">
+						<img src="media/icons/dumbbell.svg" alt="dumbbell">
+						<p class="p2">Ежедневные </br>занятия на все </br>группы мышц</p>
+					</div>
+					<div class="item">
+						<img src="media/icons/food.svg" alt="food">
+						<p class="p2">Рацион и меню на </br>каждый день для </br>мужчин и девушек</p>
+					</div>
+					<div class="item">
+						<img src="media/icons/youtube.svg" alt="youtube">
+						<p class="p2">Прямой эфир с Александром </br>Кравченко, Натальей Ерохиной, </br>Виктором Набоком «Как </br>развиваться после марафона»</p>
+					</div>
+					<div class="item">
+						<img src="media/icons/youtube.svg" alt="youtube">
+						<p class="p2">Прямой эфир с </br>Виталием Самуйленко </br>«Функциональные тренировки»</p>
+					</div>
+					<div class="item finish">
+						<img src="media/icons/finish.svg" alt="finish">
+						<p class="p2">Подведение итогов, </br>голосование и </br>розыгрыш призов</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="weeks adaptive">
+				<img src="media/weeks.svg" alt="weeks">
+				<div class="week first">
+					<input type="checkbox" name="inset" id="first_week" class="serviceInput">
+					<label for="first_week" class="headline">
+						<span>Неделя 1</span>
+						<span>03.08-09.08</span>
+						<img src="media/icons/plus.svg" alt="plus">
+					</label>
+					<div class="first_week">
+						<div class="item first">
+							<img src="media/icons/check.svg" alt="check">
+							<p class="p2">Тест на определение уровня сложности</p>
+						</div>
+						<div class="item">
+							<img src="media/icons/dumbbell.svg" alt="dumbbell">
+							<p class="p2">Ежедневные занятия на все группы мышц</p>
+						</div>
+						<div class="item">
+							<img src="media/icons/food.svg" alt="food">
+							<p class="p2">Рацион и меню на каждый день для мужчин и девушек</p>
+						</div>
+						<div class="item">
+							<img src="media/icons/youtube.svg" alt="youtube">
+							<p class="p2">Прямой эфир с Александром Кравченко и Натальей Ерохиной «Мотивация» </p>
+						</div>
+						<div class="item">
+							<img src="media/icons/youtube.svg" alt="youtube">
+							<p class="p2">Прямой эфир с Виктором Набоком «Качаем пресс правильно»</p>
+						</div>
+					</div>
+				</div>
+				<div class="week">
+					<input type="checkbox" name="inset" id="second_week" class="serviceInput">
+					<label for="second_week" class="headline">
+						<span>Неделя 2</span>
+						<span>10.08-16.08</span>
+						<img src="media/icons/plus.svg" alt="plus">
+					</label>
+					<div class="second_week">
+						<div class="item first">
+							<img src="media/icons/dumbbell.svg" alt="dumbbell">
+							<p class="p2">Ежедневные занятия на все группы мышц</p>
+						</div>
+						<div class="item">
+							<img src="media/icons/food.svg" alt="food">
+							<p class="p2">Рацион и меню на каждый день для мужчин и девушек</p>
+						</div>
+						<div class="item">
+							<img src="media/icons/youtube.svg" alt="youtube">
+							<p class="p2">Прямой эфир с Александром Кравченко и Натальей Ерохиной «Промежуточные результаты марафона»</p>
+						</div>
+						<div class="item">
+							<img src="media/icons/youtube.svg" alt="youtube">
+							<p class="p2">Прямой эфир с Алёной Шумаковой «Тренировка на ягодицы» </p>
+						</div>
+					</div>
+				</div>
+				<div class="week">
+					<input type="checkbox" name="inset" id="third_week" class="serviceInput">
+					<label for="third_week" class="headline">
+						<span>Неделя 3</span>
+						<span>17.08-23.08</span>
+						<img src="media/icons/plus.svg" alt="plus">
+					</label>
+					<div class="third_week">
+						<div class="item first">
+							<img src="media/icons/dumbbell.svg" alt="dumbbell">
+							<p class="p2">Ежедневные занятия на все группы мышц</p>
+						</div>
+						<div class="item">
+							<img src="media/icons/food.svg" alt="food">
+							<p class="p2">Рацион и меню на каждый день для мужчин и девушек</p>
+						</div>
+						<div class="item">
+							<img src="media/icons/youtube.svg" alt="youtube">
+							<p class="p2">Прямой эфир с Александром Кравченко, Натальей Ерохиной, Виктором Набоком «Как развиваться после марафона»</p>
+						</div>
+						<div class="item">
+							<img src="media/icons/youtube.svg" alt="youtube">
+							<p class="p2">Прямой эфир с Виталием Самуйленко «Функциональные тренировки»</p>
+						</div>
+						<div class="item finish">
+							<img src="media/icons/finish.svg" alt="finish">
+							<p class="p2">Подведение итогов, голосование и розыгрыш призов</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="seventh_background">
+				<img src="media/seventh_background.png" alt="seventh_background">
+			</div>
+		</div>
+	</section>
+	<section id="eighth_screen">
+		<div class="container">
+			<h2>Пакеты участия</h2>
+			<div class="packet">
+				<p>Standart</p>
+				<div class="description">
+					<p class="p2">Тест на уровень сложности</p>
+					<p class="p2">Ежедневные тренировки</p>
+					<p class="p2">Рацион питания: отдельно для мужчин и девушек с меню на каждый день</p>
+					<p class="p2">Community чат с единомышленниками</p>
+					<p class="p2">Обратная связь от тренеров</p>
+					<p class="p2">Полезные советы и ритуалы</p>
+					<p class="p2">Прямые эфиры с тренерами-практиками</p>
+					<p class="p2">Знакомство с командой Online Fitness Games</p>
+					<p class="p2">Offline-тренировки в Москве</p>
+				</div>
+				<div class="cost">
+					<span>$24</span>
+					<p>Старая цена </br><span class="cross">$48</span></p>
+				</div>
+				<a href="#">Принять участие</a>
+				<img src="media/standart.svg" alt="standart">
+			</div>
+			<div class="packet">
+				<p>VIP с Александром </br>Кравченко</p>
+				<div class="description">
+					<p class="p2">Тест на уровень сложности</p>
+					<p class="p2">Ежедневные тренировки</p>
+					<p class="p2">Рацион питания: отдельно для мужчин и девушек с меню на каждый день</p>
+					<p class="p2">Community чат с единомышленниками</p>
+					<p class="p2">Обратная связь от тренеров</p>
+					<p class="p2">Полезные советы и ритуалы</p>
+					<p class="p2">Прямые эфиры с тренерами-практиками</p>
+					<p class="p2">Знакомство с командой Online Fitness Games</p>
+					<p class="p2">Offline-тренировки в Москве</p>
+				</div>
+				<div class="additional_description">
+					<p>Личный чат, поддержка и авторские рекомендации по вашим целям от Александра</p>
+					<p>Дополнительные материалы, записи видео и менторство от Александра</p>
+				</div>
+				<div class="cost">
+					<span>$240</span>
+					<p>Старая цена </br><span class="cross">$480</span></p>
+				</div>
+				<a href="#">Принять участие</a>
+				<div class="places">
+					<span>Осталось мест</span>
+					<img src="media/icons/people.svg" alt="people">
+					<span>2 из 7</span>
+				</div>
+				<img src="media/vip.svg" alt="vip">
+			</div>
+		</div>
+	</section>
+	<section id="ninth_screen">
+		<div class="container">
+			<h2>Ответы на популярные вопросы</h2>
+			<div class="questions">
+				<input type="checkbox" name="inset" id="first_question" class="serviceInput">
+				<label for="first_question">
+					<p class="p1">Где будет проходить марафон?</p>
+					<img src="media/icons/plus.svg" alt="plus">
+				</label>
+				<div class="first_question">
+					<p>После оплаты мы добавим вас в закрытый Telegram-канал со всей информацией о заданиях, занятиях и эфирах.</p>
+				</div>
+				<input type="checkbox" name="inset" id="second_question" class="serviceInput">
+				<label for="second_question">
+					<p class="p1">Можно принять участие, если никогда не занимались раньше?</p>
+					<img src="media/icons/plus.svg" alt="plus">
+				</label>
+				<div class="second_question">
+					<p>Да, марафон подходит как опытным, так и начинающим. Все задания и упражнения подбираются с учетом результатов персональной тренировки. </p>
+				</div>
+				<input type="checkbox" name="inset" id="third_question" class="serviceInput">
+				<label for="third_question">
+					<p class="p1">Можно принимать участие из другой страны?</p>
+					<img src="media/icons/plus.svg" alt="plus">
+				</label>
+				<div class="third_question">
+					<p>Да, у нас есть участники из Украины, России, Беларуси, Казахстана, Латвии, США, Испании, Финляндии, Канады.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="tenth_screen">
+		<div class="container">
+			<div class="heading">
+				<h2>Хотите узнать, как </br>всё будет проходить?</h2>
+				<p class="p1">Получите <span>бесплатно</span> задания, </br>упражнения и рекомендации </br>первой недели марафона</p>
+			</div>
+			<form action="" class="feedback col-1-2">
+				<input type="text" name="name" placeholder="Введите ваше имя" required="">
+				<input type="tel" name="tel" placeholder="+7 _ _ _ - _ _ _ - _ _ - _ _" required="">
+				<input type="email" name="email" placeholder="Электронная почта" required="">
+				<button type="submit">Получить занятия</button>
+			</form>
+			<div class="tenth_background">
+				<img src="media/tenth_background.svg" alt="tenth_background">
+				<img src="media/froze.png" alt="froze">
+				<img src="media/logo.svg" alt="logo">
+				<img src="media/eclipse.svg" alt="eclipse">
+			</div>
+			<div class="social">
+				<img src="media/icons/instagram.svg" alt="instagram">
+				<img src="media/icons/telegram.svg" alt="telegram">
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<p>
+				Организация обработки персональных </br>данных в Компании соответствует общим
+				</br>принципам обработки персональных данных </br>Европейского Регламента по защите данных
+				</br>(GDPR).
+			</p>
+			<ul>
+				<li><a href="#">Соглашение на обработку персональных данных</a></li>
+				<li><a href="#">Пользовательское соглашение</a></li>
+				<li><a href="#">Политика конфиденциальности</a></li>
+				<li><a href="#">Согласие на обработку персональных данных консультанта</a></li>
+				<li><a href="#">Оферта</a></li>
+			</ul>
+			<div class="payment">
+				<img src="media/icons/visa.svg" alt="visa">
+				<img src="media/icons/mastercard.svg" alt="mastercard">
+			</div>
+			<a href="https://rezart.agency/" target="_blank"><img src="media/icons/RA.png" alt="RA"></a>
+		</div>
+	</footer>
+	<div class="md-modal md-effect-12">
+		<div class="md-content">
+			<h3>Запистаься на марафон</h3>
+			<form action="" class="feedback col-1-2">
+				<input type="text" name="name" placeholder="Введите ваше имя" required="">
+				<input type="tel" name="tel" placeholder="+7 _ _ _ - _ _ _ - _ _ - _ _" required="">
+				<input type="email" name="email" placeholder="Электронная почта" required="">
+				<button type="submit">Забронировать место</button>
+			</form>
+		</div>
+		<button class="md-close"><img src="media/icons/close.svg" alt="close"></button>
+	</div>
+	<div class="menu md-effect-12">
+		<div class="md-content">
+			<ul>
+				<li><a href="#fourth_screen" class="menuLink">Результаты</a></li>
+				<li><a href="#sixth_screen" class="menuLink">О марафоне</a></li>
+				<li><a href="#seventh_screen" class="menuLink">Программа</a></li>
+			</ul>
+			<a href="#" class="lang"><span>RU</span><span>EN</span></a>
+			<a href="#eighth_screen" class="menuLink">Выбрать пакет</a>
+			<div class="social">
+				<a href="#"><img src="media/icons/instagram.svg" alt="instagram"></a>
+				<a href="#"></a><img src="media/icons/telegram.svg" alt="telegram"></a>
+			</div>
+		</div>
+	</div>
+	<div class="md-overlay"></div>
+	<div class="md-overlay1"></div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		   $(".smooth").on("click","a", function (event) {
+			   event.preventDefault();
+			   var id  = $(this).attr('href'),
+				   top = $(id).offset().top;
+			   $('body,html').animate({scrollTop: top}, 1500);
+		   });
+	   });
+	</script>
 </body>
 </html>
