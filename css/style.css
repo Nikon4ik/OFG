@@ -1139,7 +1139,7 @@ label[for="third_question"]:hover svg path {
 	width: 445px;
 	margin-top: 100px;
 }
-#tenth_screen .feedback input {
+#tenth_screen .feedback input:not([type="tel"]) {
 	width: 445px;
 	background-color: rgba(196, 196, 196, 0.03);
 	border: 1px solid rgba(255, 255, 255, 0.03);
@@ -1150,6 +1150,19 @@ label[for="third_question"]:hover svg path {
 	height: 55px;
 	margin-bottom: 30px;
 	padding: 15px 25px;
+	font-family: Circe-Regular, sans-serif;
+	font-size: 18px;
+	line-height: 27px;
+}
+#tenth_screen .feedback input[type="tel"] {
+	background-color: rgba(196, 196, 196, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.03);
+	border-bottom: 2px solid #C4C4C4;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	width: 100%;
+	height: 55px;
+	padding: 15px 25px 15px 75px;
 	font-family: Circe-Regular, sans-serif;
 	font-size: 18px;
 	line-height: 27px;
@@ -1812,6 +1825,7 @@ footer .payment img:last-child {
 	}
 	#tenth_screen .feedback {
 		margin-top: 60px;
+		z-index: 20;
 	}
 	#tenth_screen .feedback button {
 		width: 100%;

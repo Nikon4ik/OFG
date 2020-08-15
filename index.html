@@ -7,7 +7,18 @@
 	<link rel="stylesheet" href="css/intlTelInput.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>Document</title>
+	<title>Онлайн-марафон «ТРАНСФОРМАЦИЯ» от Online Fitness Games</title>
+	<meta name="description" content="Измените свое тело, питание и образ жизни за 21 день на онлайн-марафоне от сертифицированных ТОП-тренеров и участвуйте в розыгрыше призов. Уже 13 000+ участников.">
+	<link rel="icon" type="image/png" href="media/icons/favicon.png" sizes="16x16">
+	<meta property="og:image" content="media/openGraph.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="300">
+	<meta property="og:image:height" content="300">
+	<meta property="og:site_name" content="">
+	<meta property="og:title" content="">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Online Fitness Games">
+	<meta property="og:description" content="Измените свое тело, питание и образ жизни за 21 день на онлайн-марафоне от сертифицированных ТОП-тренеров и участвуйте в розыгрыше призов. Уже 13 000+ участников.">
 </head>
 <body>
 	<header>
@@ -634,7 +645,7 @@
 			</div>
 			<form action="" class="feedback col-1-2">
 				<input type="text" name="name" placeholder="Введите ваше имя" required>
-				<input type="tel" name="tel" required id="phone">
+				<input type="tel" name="tel" required id="phone" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
 				<input type="email" name="email" placeholder="Электронная почта" required>
 				<button type="submit">Получить занятия</button>
 			</form>
@@ -675,9 +686,9 @@
 		<div class="md-content">
 			<h3></h3>
 			<form action="" class="feedback col-1-2">
-				<input type="text" name="name" placeholder="Введите ваше имя" required="">
-				<input type="tel" name="tel" placeholder="+7 _ _ _ - _ _ _ - _ _ - _ _" required="">
-				<input type="email" name="email" placeholder="Электронная почта" required="">
+				<input type="text" name="name" placeholder="Введите ваше имя" required>
+				<input type="tel" name="tel" id="popupPhone" required onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+				<input type="email" name="email" placeholder="Электронная почта" required>
 				<button type="submit">Забронировать место</button>
 			</form>
 		</div>
@@ -706,10 +717,31 @@
 	<script src="js/intlTelInput.js"></script>
 	<script>
 		var input = document.querySelector("#phone");
-		intlTelInput(input, {
-			utilsScript: "js/utils.js"
+		window.intlTelInput(input, {
+			utilsScript: "js/utils.js",
+			initialCountry: "auto",
+  			geoIpLookup: function(success, failure) {
+   				$.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      				var countryCode = (resp && resp.country) ? resp.country : "";
+     			success(countryCode);
+				});
+			},
+			separateDialCode: true,
+		});
+		var input = document.querySelector("#popupPhone");
+		window.intlTelInput(input, {
+			utilsScript: "js/utils.js",
+			initialCountry: "auto",
+  			geoIpLookup: function(success, failure) {
+   				$.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      				var countryCode = (resp && resp.country) ? resp.country : "";
+     			success(countryCode);
+				});
+			},
+			separateDialCode: true,
 		});
 	</script>
+	<script src="https://unpkg.com/imask"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 		   $(".smooth").on("click","a", function (event) {
