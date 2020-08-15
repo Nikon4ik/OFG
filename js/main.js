@@ -59,3 +59,28 @@ $(function () {
 		document.body.style.overflowY = 'auto';
 	});
 });
+$(function () {
+	$('.md-trigger').on('click', function() {
+		var text = $(this).siblings( 'p' ).text();
+		$('.md-modal h3').text(text);
+	});
+});
+
+// $(window).scroll(function(){
+// 	if( $(this).scrollTop() > 4200 ) {
+// 		var current = $(window).scrollTop();
+// 		var total = $('.sixth_background').height() - current;
+// 		var ele = $(".transformation");
+// 		var currPosition = ele.position().left;
+// 		var trackLength = 900;
+// 		$(window).scroll(function (event) {
+// 			current = $(window).scrollTop();
+// 			console.log({total:total,current:current});
+// 			console.log(current/total * 100);
+// 			var newPosition = trackLength * (current/total)
+// 			ele.css({right:currPosition+newPosition+'px'});
+// 		});
+// 	}
+// });
+
+

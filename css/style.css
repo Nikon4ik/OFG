@@ -18,6 +18,12 @@
 	from { opacity: 0 }
 	to { opacity: 1 }
 }
+@keyframes after {
+	from { left: -20px }
+	to { left: 0 }
+	from { opacity: 0 }
+	to { opacity: 1 }
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -45,6 +51,7 @@ button,
 button img,
 label {
 	cursor: pointer;
+	outline: none;
 }
 body {
     width: 100%;
@@ -211,6 +218,9 @@ header .lang {
 	width: 81px;
 	height: 32px;
 }
+header .lang:hover {
+	background-color: #942F2F;
+}
 header .lang span {
 	display: flex;
 	width: 50%;
@@ -218,8 +228,8 @@ header .lang span {
 	align-items: center;
 	justify-content: center;
 }
-header .lang span:first-child{
-	background-color: rgba(255, 255, 255, 0.1);
+header .lang span:first-child {
+	background-color: #3e3e3e;
 	border-radius: 20px;
 }
 header div > a[href]:not(.lang) {
@@ -260,6 +270,7 @@ header li a:hover::after {
 	position: absolute;
 	bottom: -13px;
 	left: 0;
+	animation: 0.3s after;
 }
 header .container {
 	height: 100px;
@@ -532,8 +543,8 @@ header .container > img {
 	height: 60px;
 	border: none;
 }
-#fourth_screen .slider-arrow button:hover svg rect {
-	fill: #942F2F;
+#fourth_screen .slider-arrow button:hover svg g path {
+	fill: #F44D4D;;
 }
 #fourth_screen .slider-arrow button:focus {
 	box-shadow: none;
@@ -565,6 +576,7 @@ header .container > img {
 }
 #fourth_screen .info .p2 {
 	margin-bottom: 15px;
+	word-spacing: 3px;
 }
 #fourth_screen .info p:not(.p2) {
 	color: #B6B6B6;
@@ -609,7 +621,7 @@ header .container > img {
 #fifth_screen .col-1-2:first-child h3 {
 	width: 450px;
 }
-#fifth_screen .col-1-2:first-child button {
+#fifth_screen .col-1-2:first-child a[href] {
 	font-family: Circe-Bold, sans-serif;
     width: 260px;
     font-size: 18px;
@@ -621,7 +633,7 @@ header .container > img {
 	text-align: center;
 	margin-top: 45px;
 }
-#fifth_screen .col-1-2:first-child button:hover {
+#fifth_screen .col-1-2:first-child a[href]:hover {
 	background-color: #942F2F;
 }
 #fifth_screen .col-1-2:last-child .p2{
@@ -926,7 +938,7 @@ header .container > img {
 }
 #eighth_screen .additional_description p::before {
 	content: "★";
-	font-size: 22px;
+	font-size: 17px;
 	position: absolute;
 	left: -25px;
 	top: -2px;
@@ -959,7 +971,7 @@ header .container > img {
 	line-height: 32px;
 	text-decoration-line: line-through;
 }
-#eighth_screen a[href] {
+#eighth_screen button {
 	font-family: Circe-Bold, sans-serif;
     width: 100%;
     font-size: 18px;
@@ -968,9 +980,11 @@ header .container > img {
     padding: 15px 30px;
     font-weight: bold;
 	text-align: center;
+	color: #FFFFFF;
 	margin-top: 40px;
+	outline: none;
 }
-#eighth_screen a[href]:hover {
+#eighth_screen button:hover {
 	background-color: #942F2F;
 }
 #ninth_screen {
@@ -1012,12 +1026,18 @@ header .container > img {
 .third_question p {
 	width: calc(100% - 28px);
 }
-label[for="first_question"] img,
-label[for="second_question"] img,
-label[for="third_question"] img {
+label[for="first_question"] svg,
+label[for="second_question"] svg,
+label[for="third_question"] svg {
 	width: 28px;
 	height: 28px;
+	transform: rotate(45deg);
 	transition: all ease-in-out 0.4s;
+}
+label[for="first_question"]:hover svg path,
+label[for="second_question"]:hover svg path,
+label[for="third_question"]:hover svg path {
+	fill: #F44D4D;
 }
 #first_question:checked ~ .first_question,
 #second_question:checked ~ .second_question,
@@ -1029,10 +1049,10 @@ label[for="third_question"] img {
 #third_question:checked ~ .third_question p {
 	animation: label 1s;
 }
-#first_question:checked ~ label[for="first_question"] img,
-#second_question:checked ~ label[for="second_question"] img,
-#third_question:checked ~ label[for="third_question"] img {
-	transform: rotate(45deg);
+#first_question:checked ~ label[for="first_question"] svg,
+#second_question:checked ~ label[for="second_question"] svg,
+#third_question:checked ~ label[for="third_question"] svg {
+	transform: none;
 }
 #tenth_screen {
 	width: 100%;
@@ -1135,7 +1155,7 @@ label[for="third_question"] img {
 	line-height: 27px;
 }
 #tenth_screen .feedback input:focus {
-	border-bottom: 2px solid #F44D4D;;
+	border-bottom: 2px solid #F44D4D;
 }
 #tenth_screen .feedback button {
 	font-family: Circe-Bold, sans-serif;
@@ -1177,6 +1197,9 @@ footer p {
 footer a[href] {
 	color: #B6B6B6;
 }
+footer ul a[href]:hover {
+    color: #F44D4D;
+}
 footer ul {
 	width: 310px;
 }
@@ -1202,9 +1225,10 @@ footer .payment img:last-child {
 .md-modal {
     margin: auto;
     position: fixed;
-    top: 150px;
+    top: 0;
     left: 0;
-    right: 0;
+	right: 0;
+	bottom: 0;
     width: 550px;
     height: 535px;
     text-align: center;
@@ -2355,9 +2379,9 @@ footer .payment img:last-child {
 		height: auto;
 		justify-content: space-between;
 	}
-	label[for="first_question"] img,
-	label[for="second_question"] img,
-	label[for="third_question"] img {
+	label[for="first_question"] svg,
+	label[for="second_question"] svg,
+	label[for="third_question"] svg {
 		width: 20px;
 		height: 20px;
 	}

@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/intlTelInput.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Document</title>
@@ -38,7 +39,7 @@
 			<div class="col-1-2">
 				<ul>
 					<li>
-						<span>С поддержкой профессиональных<b> ТОП-тренеров и экспертов</b>
+						<span>С поддержкой профессиональных<b> ТОП-тренеров </br>и экспертов</b>
 					</li>
 					<li>
 						<span>Без надрыва неэффективных методов —</br> <b>с персональным планом нагрузок</b></span>
@@ -284,9 +285,9 @@
 	</section>
 	<section id="fifth_screen">
 		<div class="container">
-			<div class="col-1-2">
+			<div class="col-1-2 smooth">
 				<h3>Результат каждого из них и тысяч других участников — </br>это 1 правильное решение, которое нужно принять сейчас</h3>
-				<button class="md-trigger" data-modal="modal-12">Записаться на марафон</button>
+				<a href="#eighth_screen">Записаться на марафон</a>
 			</div>
 			<div class="col-1-2">
 				<div class="mentor">
@@ -343,7 +344,7 @@
 			</div>
 			<div class="sixth_background">
 				<img src="media/sixth_background.svg" alt="sixth_background">
-				<img src="media/transformation.svg" alt="transformation">
+				<img src="media/transformation.svg" alt="transformation" class="transformation">
 			</div>
 		</div>
 	</section>
@@ -543,9 +544,9 @@
 				</div>
 				<div class="cost">
 					<span>$24</span>
-					<p>Старая цена </br><span class="cross">$48</span></p>
+					<p>Старая цена </br><span class="cross">&#160;$48&#160;</span></p>
 				</div>
-				<a href="#">Принять участие</a>
+				<button class="md-trigger" data-modal="modal-12">Принять участие</button>
 				<img src="media/standart.svg" alt="standart">
 			</div>
 			<div class="packet">
@@ -567,9 +568,9 @@
 				</div>
 				<div class="cost">
 					<span>$240</span>
-					<p>Старая цена </br><span class="cross">$480</span></p>
+					<p>Старая цена </br><span class="cross">&#160;$480&#160;</span></p>
 				</div>
-				<a href="#">Принять участие</a>
+				<button class="md-trigger" data-modal="modal-12">Принять участие</button>
 				<div class="places">
 					<span>Осталось мест</span>
 					<img src="media/icons/people.svg" alt="people">
@@ -583,10 +584,15 @@
 		<div class="container">
 			<h2>Ответы на популярные вопросы</h2>
 			<div class="questions">
-				<input type="checkbox" name="inset" id="first_question" class="serviceInput">
+				<input type="checkbox" name="inset" id="first_question" class="serviceInput" checked>
 				<label for="first_question">
 					<p class="p1">Где будет проходить марафон?</p>
-					<img src="media/icons/plus.svg" alt="plus">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g>
+						<path d="M23.4854 5.10078L24.8996 6.51499L6.51483 24.8998L5.10061 23.4856L23.4854 5.10078Z" fill="white"/>
+						<path d="M24.8996 23.4852L23.4854 24.8995L5.10059 6.51468L6.5148 5.10046L24.8996 23.4852Z" fill="white"/>
+						</g>
+					</svg>
 				</label>
 				<div class="first_question">
 					<p>После оплаты мы добавим вас в закрытый Telegram-канал со всей информацией о заданиях, занятиях и эфирах.</p>
@@ -594,7 +600,12 @@
 				<input type="checkbox" name="inset" id="second_question" class="serviceInput">
 				<label for="second_question">
 					<p class="p1">Можно принять участие, если никогда не занимались раньше?</p>
-					<img src="media/icons/plus.svg" alt="plus">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g>
+						<path d="M23.4854 5.10078L24.8996 6.51499L6.51483 24.8998L5.10061 23.4856L23.4854 5.10078Z" fill="white"/>
+						<path d="M24.8996 23.4852L23.4854 24.8995L5.10059 6.51468L6.5148 5.10046L24.8996 23.4852Z" fill="white"/>
+						</g>
+					</svg>
 				</label>
 				<div class="second_question">
 					<p>Да, марафон подходит как опытным, так и начинающим. Все задания и упражнения подбираются с учетом результатов персональной тренировки. </p>
@@ -602,7 +613,12 @@
 				<input type="checkbox" name="inset" id="third_question" class="serviceInput">
 				<label for="third_question">
 					<p class="p1">Можно принимать участие из другой страны?</p>
-					<img src="media/icons/plus.svg" alt="plus">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g>
+						<path d="M23.4854 5.10078L24.8996 6.51499L6.51483 24.8998L5.10061 23.4856L23.4854 5.10078Z" fill="white"/>
+						<path d="M24.8996 23.4852L23.4854 24.8995L5.10059 6.51468L6.5148 5.10046L24.8996 23.4852Z" fill="white"/>
+						</g>
+					</svg>
 				</label>
 				<div class="third_question">
 					<p>Да, у нас есть участники из Украины, России, Беларуси, Казахстана, Латвии, США, Испании, Финляндии, Канады.</p>
@@ -617,9 +633,9 @@
 				<p class="p1">Получите <span>бесплатно</span> задания, </br>упражнения и рекомендации </br>первой недели марафона</p>
 			</div>
 			<form action="" class="feedback col-1-2">
-				<input type="text" name="name" placeholder="Введите ваше имя" required="">
-				<input type="tel" name="tel" placeholder="+7 _ _ _ - _ _ _ - _ _ - _ _" required="">
-				<input type="email" name="email" placeholder="Электронная почта" required="">
+				<input type="text" name="name" placeholder="Введите ваше имя" required>
+				<input type="tel" name="tel" required id="phone">
+				<input type="email" name="email" placeholder="Электронная почта" required>
 				<button type="submit">Получить занятия</button>
 			</form>
 			<div class="tenth_background">
@@ -629,8 +645,8 @@
 				<img src="media/eclipse.svg" alt="eclipse">
 			</div>
 			<div class="social">
-				<img src="media/icons/instagram.svg" alt="instagram">
-				<img src="media/icons/telegram.svg" alt="telegram">
+				<a href="https://www.instagram.com/online_fitness_games_/" target="_blank"><img src="media/icons/instagram.svg" alt="instagram"></a>
+				<a href="https://t.me/onlinefitnessgames" target="_blank"><img src="media/icons/telegram.svg" alt="telegram"></a>
 			</div>
 		</div>
 	</section>
@@ -657,7 +673,7 @@
 	</footer>
 	<div class="md-modal md-effect-12">
 		<div class="md-content">
-			<h3>Запистаься на марафон</h3>
+			<h3></h3>
 			<form action="" class="feedback col-1-2">
 				<input type="text" name="name" placeholder="Введите ваше имя" required="">
 				<input type="tel" name="tel" placeholder="+7 _ _ _ - _ _ _ - _ _ - _ _" required="">
@@ -687,6 +703,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/intlTelInput.js"></script>
+	<script>
+		var input = document.querySelector("#phone");
+		intlTelInput(input, {
+			utilsScript: "js/utils.js"
+		});
+	</script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 		   $(".smooth").on("click","a", function (event) {
