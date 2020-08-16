@@ -1202,6 +1202,12 @@ label[for="third_question"]:hover svg path {
 #tenth_screen .feedback input:not([type="tel"]).valid {
 	border-bottom: 2px solid #FFFFFF;
 }
+#tenth_screen .feedback input:not([type="tel"]).error {
+	border-bottom: 2px solid #FF0000;
+}
+#tenth_screen .feedback input:not([type="tel"]):focus {
+	border-bottom: 2px solid #F44D4D;
+}
 #tenth_screen .feedback input[type="tel"] {
 	background-color: rgba(196, 196, 196, 0.03);
 	border: 1px solid rgba(255, 255, 255, 0.03);
@@ -1218,7 +1224,10 @@ label[for="third_question"]:hover svg path {
 #tenth_screen .feedback input[type="tel"].valid {
 	border-bottom: 2px solid #FFFFFF;
 }
-#tenth_screen .feedback input:focus {
+#tenth_screen .feedback input[type="tel"].error {
+	border-bottom: 2px solid #FF0000;
+}
+#tenth_screen .feedback input[type="tel"]:focus {
 	border-bottom: 2px solid #F44D4D;
 }
 #tenth_screen .feedback button {
@@ -1339,8 +1348,11 @@ footer .payment img:last-child {
 	font-size: 18px;
 	line-height: 27px;
 }
+.md-modal .feedback1 input.error {
+		border-bottom: 2px solid #FF0000;
+}
 .md-modal .feedback1 input:focus {
-	border-bottom: 2px solid #F44D4D;;
+	border-bottom: 2px solid #F44D4D;
 }
 .md-modal .feedback1 button {
 	font-family: Circe-Bold, sans-serif;
@@ -1451,6 +1463,7 @@ footer .payment img:last-child {
 }
 .error {
 	color: #FF0000;
+
 }
 label.error {
 	height: max-content;
@@ -1497,9 +1510,6 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
 	-webkit-text-fill-color: #FFFFFF;
 	transition: background-color 5000s ease-in-out 0s;
-}
-input.error {
-	border-bottom: #FF0000;
 }
 
 
