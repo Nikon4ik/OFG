@@ -1498,6 +1498,9 @@ select:-webkit-autofill:focus {
 	-webkit-text-fill-color: #FFFFFF;
 	transition: background-color 5000s ease-in-out 0s;
 }
+input.error {
+	border-bottom: #FF0000;
+}
 
 
 @media screen and (max-width: 992px) {
