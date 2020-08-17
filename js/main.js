@@ -71,19 +71,19 @@ $(function () {
 
 	$('.md-offer').on('click', function() {
 		if( $(this).hasClass('offer') ) {
-			$('.iframe').attr("src","docs/offer.html");
+			$('.iframe').attr("src","../docs/offer.html");
 		}
 		else if ( $(this).hasClass('policy') ) {
-			$('.iframe').attr("src","docs/policy.html");
+			$('.iframe').attr("src","../docs/policy.html");
 		}
 		else if ( $(this).hasClass('agreement') ) {
-			$('.iframe').attr("src","docs/agreement.html");
+			$('.iframe').attr("src","../docs/agreement.html");
 		}
 		else if ( $(this).hasClass('consent') ) {
-			$('.iframe').attr("src","docs/consent.html");
+			$('.iframe').attr("src","../docs/consent.html");
 		}
 		else if ( $(this).hasClass('coachConsent') ) {
-			$('.iframe').attr("src","docs/coachConsent.html");
+			$('.iframe').attr("src","../docs/coachConsent.html");
 		}
 
 	});
@@ -108,7 +108,13 @@ $(function () {
 $(function () {
 	$('.md-trigger').on('click', function() {
 		var text = $(this).siblings( 'p' ).text();
-		$('.md-modal h3').text(text);
+		$('.md-modal h3').text("Пакет"+" - "+text);
+	});
+});
+$(function () {
+	$('.md-trigger').on('click', function() {
+		var text = $(this).siblings( 'p' ).text();
+		$('.md-modal h3.en').text("Packet"+" - "+text);
 	});
 });
 $(function () {
@@ -182,18 +188,38 @@ $(window).scroll(function() {
 });
 
 $('#element').typeIt({
-	strings: ["свое тело", "питание", "режим дня", "привычки", "свое тело"],
+	strings: ["свое тело", "питание", "режим дня", "привычки"],
 	speed: 200,
 	breakLines: false,
-	waitUntilVisible: true
+	waitUntilVisible: true,
+	loop: true
+});
+$('#elementEN').typeIt({
+	strings: ["your body", "nutrition", "daily regime", "habits"],
+	speed: 200,
+	breakLines: false,
+	waitUntilVisible: true,
+	loop: true
 });
 
-$(window).scroll(function(){
-	if( $(this).scrollTop() > 3400 && $(this).scrollTop() < 4150 ) {
-		$(".transformation").css('right', -100);
-	}
-	else {
-		$(".transformation").css('right', -1750);
+// $(window).scroll(function(){
+// 	if( $(this).scrollTop() > 3400 && $(this).scrollTop() < 4150 ) {
+// 		$(".transformation").css('right', -100);
+// 	}
+// 	else {
+// 		$(".transformation").css('right', -1750);
+// 	}
+// });
+
+
+$(window).scroll(function (event) {
+	if( $(this).scrollTop() > 3250 && $(this).scrollTop() < 3950 ) {
+		current = $(window).scrollTop();
+		var total = 3360;
+		var ele = $(".transformation");
+		console.log({total:total,current:current});
+		var newPosition = -1750 + (current - 3360)*2.9;
+		ele.css({right:newPosition+'px'});
 	}
 });
 

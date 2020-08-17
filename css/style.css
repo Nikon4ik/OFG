@@ -235,6 +235,14 @@ header .lang span:first-child {
 	background-color: #3e3e3e;
 	border-radius: 20px;
 }
+header .lang.en span:last-child {
+	background-color: #3e3e3e;
+	border-radius: 20px;
+}
+header .lang.en span:first-child {
+	background-color: unset;
+	border-radius: unset;
+}
 header div > a[href]:not(.lang) {
 	text-align: center;
 	width: 200px;
@@ -311,7 +319,17 @@ header .container > img {
 	position: absolute;
 	left: 103px;
 }
+#first_screen #elementEN {
+	white-space: nowrap;
+	background: rgba(244, 77, 77, 0.3);
+	overflow: visible;
+	position: absolute;
+	left: 153px;
+}
 #first_screen #element .ti-cursor {
+	top: 2px;
+}
+#first_screen #elementEN .ti-cursor {
 	top: 2px;
 }
 #first_screen p:not(.p1) {
@@ -703,7 +721,7 @@ header .container > img {
 	position: absolute;
 	top: 370px;
 	right: -1750px;
-	transition: all 1s ease-in;
+	transition: all 0.2s ease-in;
 }
 #sixth_screen .col-1-2 {
 	height: 440px;
@@ -1261,8 +1279,10 @@ footer .container {
 	height: 100%;
 }
 footer .container > a {
-	width: 45px;
-	height: 30px;
+	width: 50px;
+	height: 35px;
+	position: relative;
+	top: -7px;
 }
 footer p {
 	width: max-content;
@@ -1282,6 +1302,7 @@ footer ul {
 footer li {
 	width: max-content;
 	margin-bottom: 7px;
+	width: 100%;
 }
 footer .payment {
 	width: max-content;
@@ -1404,7 +1425,7 @@ footer .payment img:last-child {
 	bottom: 0;
     width: 60%;
 	height: 90%;
-	z-index: 1020;
+	z-index: 1220;
 	background: transparent;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -1923,6 +1944,9 @@ select:-webkit-autofill:focus {
 	#seventh_screen .week br:not(.adaptive) {
 		display: none;
 	}
+	#seventh_screen .week.first .item:last-child {
+		margin-bottom: 50px;
+	}
 	#seventh_screen .item p br.adaptive {
 		display: initial;
 	}
@@ -2055,9 +2079,10 @@ select:-webkit-autofill:focus {
 		justify-content: center;
 		margin-top: 60px;
 	}
-	footer a[href="https://rezart.agency/"] {
+	footer .container > a {
 		position: absolute;
 		bottom: 15px;
+		top: unset;
 	}
 	footer ul button.coachConsent {
 		text-align: center;
@@ -2525,6 +2550,9 @@ select:-webkit-autofill:focus {
 	#seventh_screen .week.first .headline {
 		margin-top: 60px;
 	}
+	#seventh_screen .week.first .item:last-child {
+		margin-bottom: unset;
+	}
 	#seventh_screen .headline > img {
 		width: 20px;
 		height: 20px;
@@ -2716,9 +2744,10 @@ select:-webkit-autofill:focus {
 	footer .payment {
 		top: 100px;
 	}
-	footer a[href="https://rezart.agency/"] {
+	footer .container > a {
 		position: absolute;
 		bottom: 30px;
+		top: unset;
 	}
 	.menu {
 		width: 200px;
@@ -2747,9 +2776,17 @@ select:-webkit-autofill:focus {
 		align-items: center;
 		justify-content: center;
 	}
-	.menu .lang span:first-child{
+	.menu .lang span:first-child {
 		background-color: rgba(255, 255, 255, 0.1);
 		border-radius: 20px;
+	}
+	.menu .lang.en span:last-child {
+		background-color: rgba(255, 255, 255, 0.1);
+		border-radius: 20px;
+	}
+	.menu .lang.en span:first-child {
+		background-color: unset;
+		border-radius: unset;
 	}
 	.menu .md-content a[href="#eighth_screen"] {
 		display: initial;

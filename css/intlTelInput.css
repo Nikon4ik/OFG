@@ -133,7 +133,8 @@ margin-left: 7px; }
   right: 0;
   margin: auto;
   width: 90%;
-  position: fixed; }
+  position: fixed; 
+  z-index: 2400;}
 
 .iti-mobile .iti__country-list {
   max-height: 100%;
