@@ -1,0 +1,341 @@
+@font-face {
+    font-family: "Circe-Bold";
+    src: url("../fonts/Circe-Bold.ttf");
+}
+@font-face {
+    font-family: "Circe-Regular";
+    src: url("../fonts/Circe-Regular.ttf");
+}
+
+
+ul,
+div,
+body,
+main,
+section,
+aside,
+article,
+header,
+footer,
+nav,
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+button,
+button img,
+label {
+	cursor: pointer;
+	outline: none;
+}
+button:focus {
+	outline: none;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+	overflow-x: hidden;
+	background-color: #1D1D1D;
+	color: #FFFFFF;
+}
+a[href] {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:not([href]):not(.active) {
+	filter: grayscale( 100% );
+}
+input, textarea, button {
+	border: none;
+}
+button {
+	background-color: transparent;
+	justify-content: center;
+}
+main {
+	flex: 1 0 auto;
+	width: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+	width: 100%;
+	margin: 0;
+}
+ul {
+	width: 100%;
+	list-style: none;
+	margin: 0;
+}
+ul li {
+	width: 100%;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.container {
+	padding: 0;
+}
+p, .row {
+	width: 100%;
+	margin: 0;
+}
+.row-center {
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+.row, .row-center, [class^="col-"] {
+	align-content: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-width: 100px;
+	min-height: 1px;
+}
+.col-1-2 {
+	width: 50%;
+}
+.col-1-3 {
+	width: 33.33%;
+}
+.col-2-3 {
+	width: 66.66%;
+}
+.col-1-4 {
+	width: 25%;
+}
+.col-3-4 {
+    width: 75%;
+}
+.col-1-5 {
+	width: 20%;
+}
+.col-1-6 {
+	width: 16.67%;
+}
+.col-5-6 {
+	width: 83.33%;
+}
+.col-1-7 {
+	width: 14.29%;
+}
+.col-1-8 {
+	width: 12.5%;
+}
+.col-1-9 {
+	width: 11.11%;
+}
+.col-1-10 {
+	width: 10%;
+}
+.col-4-5 {
+	width: 80%;
+}
+.col-9-10 {
+	width: 90%;
+}
+.serviceInput {
+	display: none;
+}
+.p1 {
+	font-family: Circe-Regular;
+	font-size: 22px;
+	line-height: 30px;
+	color: #B6B6B6;
+}
+.p2 {
+	font-family: Circe-Regular, sans-serif;
+	font-size: 18px;
+	line-height: 27px;
+}
+h1 {
+	font-family: Circe-Bold, sans-serif;
+	font-size: 52px;
+	line-height: 77px;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+h2 {
+	font-family: Circe-Bold, sans-serif;
+	font-size: 48px;
+	line-height: 56px;
+}
+h3 {
+	font-family: Circe-Bold, sans-serif;
+	font-size: 30px;
+	line-height: 42px;
+}
+h4 {
+	font-family: Circe-Bold, sans-serif;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+body {
+	height: 100vh;
+	align-content: space-between;
+}
+body > div {
+	height: 470px;
+	align-content: center;
+	background-image: url(../media/bg_success.svg);
+	background-size: contain;
+	text-align: center;
+	justify-content: center;
+}
+body > div > p:not(.p1) {
+	text-transform: uppercase;
+	color: #F44D4D;
+	font-family: Circe-Bold, sans-serif;
+	margin-bottom: 20px;
+}
+body > div > .p1 {
+	margin-top: 15px;
+}
+body > div > a {
+	width: 240px;
+	height: 80px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+	margin-top: 40px;
+}
+body > div > a[href="https://www.instagram.com/online_fitness_games_/"] {
+	margin-left: 20px;
+}
+body > div > a:hover {
+	border: 1px solid #F44D4D;
+}
+body > div > a > img {
+	width: 24px;
+	height: 24px;
+}
+header {
+	height: 100px;
+	justify-content: space-between;
+	align-content: center;
+}
+header > img {
+	width: 110px;
+	height: 45px;
+}
+header > a[href] {
+	width: 200px;
+	height: 60px;
+	display: flex;
+	color: #F44D4D;
+	border: 1px solid #F44D4D;
+	justify-content: center;
+	align-items: center;
+	font-family: Circe-Bold, sans-serif;
+}
+header > a[href]:hover {
+	color: #FFFFFF;
+	background-color: #F44D4D;
+}
+footer {
+	height: 50px;
+	justify-content: space-between;
+}
+footer ul {
+	width: max-content;
+	padding: 0;
+}
+footer ul li {
+	width: max-content;
+	margin-right: 20px;
+}
+footer a > img {
+	width: 45px;
+	height: 35px;
+}
+footer button {
+	font-family: Circe-Regular, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	color: #B6B6B6;
+}
+footer button:hover {
+	color: #F44D4D;
+}
+.documents {
+    margin: auto;
+    position: fixed;
+    left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+    width: 60%;
+	height: 90%;
+	z-index: 1220;
+	background: transparent;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+	font-family: Circe-Bold, sans-serif;
+}
+.documents .md-content {
+	width: 100%;
+	height: 100%;
+}
+.documents .md-close {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
+.md-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+	z-index: 1200;
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+}
+.md-show {
+	visibility: visible;
+}
+.documents.md-show ~ .md-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (max-width: 600px) {
+	body > div {
+		background-size: cover;
+	}
+	body > div > a[href="https://www.instagram.com/online_fitness_games_/"] {
+		margin-left: 0;
+	}
+	header.container {
+		padding: 0 20px;
+	}
+	header > img {
+		width: 80px;
+		height: 45px;
+	}
+	header > a[href] {
+		width: 140px;
+		height: 45px;
+	}
+	footer {
+		justify-content: center;
+		height: max-content;
+	}
+	footer ul li {
+		width: 100%;
+		margin-right: 0;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+}

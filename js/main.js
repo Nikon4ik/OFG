@@ -1,7 +1,3 @@
-document.querySelector('.menuBar_wrapper').onclick = function(){
-	document.querySelector('.menuBar').classList.toggle('menuBar_active');
-}
-
 $(function() {
 
     $('.slider').slick({
@@ -71,6 +67,37 @@ $(function () {
 
 	$('.md-offer').on('click', function() {
 		if( $(this).hasClass('offer') ) {
+			$('.iframe').attr("src","docs/offer.html");
+		}
+		else if ( $(this).hasClass('policy') ) {
+			$('.iframe').attr("src","docs/policy.html");
+		}
+		else if ( $(this).hasClass('agreement') ) {
+			$('.iframe').attr("src","docs/agreement.html");
+		}
+		else if ( $(this).hasClass('consent') ) {
+			$('.iframe').attr("src","docs/consent.html");
+		}
+	});
+});
+$(function () {
+	$('.md-offer1').on('click', function() {
+		$('.documents').addClass('md-show');
+		document.body.style.overflow = 'hidden';
+	});
+
+	$('.md-close').on('click', function() {
+		$('.documents').removeClass('md-show');
+		document.body.style.overflowY = 'auto';
+	});
+
+	$('.md-overlay').on('click', function() {
+		$('.documents').removeClass('md-show');
+		document.body.style.overflowY = 'auto';
+	});
+
+	$('.md-offer1').on('click', function() {
+		if( $(this).hasClass('offer') ) {
 			$('.iframe').attr("src","../docs/offer.html");
 		}
 		else if ( $(this).hasClass('policy') ) {
@@ -82,10 +109,6 @@ $(function () {
 		else if ( $(this).hasClass('consent') ) {
 			$('.iframe').attr("src","../docs/consent.html");
 		}
-		else if ( $(this).hasClass('coachConsent') ) {
-			$('.iframe').attr("src","../docs/coachConsent.html");
-		}
-
 	});
 });
 $(function () {
@@ -222,5 +245,7 @@ $(window).scroll(function (event) {
 		ele.css({right:newPosition+'px'});
 	}
 });
-
+document.querySelector('.menuBar_wrapper').onclick = function(){
+	document.querySelector('.menuBar').classList.toggle('menuBar_active');
+}
 
