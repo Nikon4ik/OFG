@@ -897,17 +897,19 @@ header .container > img {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-image: url('../media/seventh_background.png');
 	background-size: contain;
-	transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 #seventh_screen .seventh_background > div img {
 	width: 100%;
 	height: 100%;
+	position: absolute;
 }
 #seventh_screen .seventh_background > div img[alt="seventh_background1"] {
-	transform: matrix(-1, 0, 0, 1, 0, 0);
 	mix-blend-mode: soft-light;
+}
+#seventh_screen .seventh_background > div img[alt="seventh_background"] {
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+	opacity: 0.4;
 }
 #eighth_screen {
 	width: 100%;
@@ -1935,17 +1937,21 @@ select:-webkit-autofill:focus {
 	#seventh_screen .heading .col-1-2 {
 		width: max-content;
 	}
+	#seventh_screen .headline {
+		margin-bottom: 15px;
+	}
 	#seventh_screen .weeks > img {
 		top: 80px;
 	}
 	#seventh_screen .week {
 		justify-content: flex-start;
+		margin-bottom: 50px;
 	}
 	#seventh_screen .week br:not(.adaptive) {
 		display: none;
 	}
 	#seventh_screen .week.first .item:last-child {
-		margin-bottom: 50px;
+		margin-bottom: 25px;
 	}
 	#seventh_screen .item p br.adaptive {
 		display: initial;
@@ -1955,7 +1961,7 @@ select:-webkit-autofill:focus {
 	}
 	#seventh_screen .item {
 		width: 32%;
-		margin-bottom: 30px;
+		margin-bottom: 0;
 	}
 	#seventh_screen .item.tabletAdaptive {
 		display: flex;
