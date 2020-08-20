@@ -2770,7 +2770,7 @@ select:-webkit-autofill:focus {
 	}
 	.menu {
 		width: 200px;
-		top: calc(50% - 200px);
+		top: calc(50% - 225px);
 	}
 	.menu ul {
 		width: 100%;
@@ -2832,13 +2832,17 @@ select:-webkit-autofill:focus {
 	}
 	.md-modal h3 {
 		margin-top: 0;
+		height: 125px;
+		align-items: center;
+		display: flex;
+		justify-content: center;
 	}
 	.md-modal #name-error {
-		top: 233px;
+		top: 238px;
     	left: 25px;
 	}
 	.md-modal #email-error {
-		bottom: 112px;
+		bottom: 108px;
     	left: 25px;
 	}
 	.md-modal label.error {

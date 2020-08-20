@@ -78,7 +78,7 @@
 					<p class="p1">Но что-то постоянно шло не так, вы сталкивались с различными трудностями:</p>
 				</div>
 			</div>
-			<img src="media/second_screen.png" alt="second_screen">
+			<img src="media/second_screen.jpg" alt="second_screen">
 			<div class="items">
 				<div class="item">
 					<img src="media/icons/icon1.svg" alt="icon1">
@@ -149,7 +149,7 @@
 					<p class="p2">Тренер <br>марафона</p>
 				</div>
 				<div class="third_background">
-					<img src="media/woman.png" alt="woman">
+					<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="media/woman.png" alt="woman">
 					<img src="media/third_background.svg" alt="third_background">
 				</div>
 			</div>
@@ -170,7 +170,7 @@
 				<div class="slide">
 					<div class="col-1-2">
 						<div class="slide_image">
-							<img src="media/slider/slide1.png" alt="slide1">
+							<img src="media/slider/slide1.jpg" alt="slide1">
 						</div>
 					</div>
 					<div class="col-1-2">
@@ -337,7 +337,7 @@
 					<p class="p2">Тренер <br>марафона</p>
 				</div>
 				<div class="fifth_background">
-					<img src="media/man.png" alt="man">
+					<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="media/man.png" alt="man">
 				</div>
 			</div>
 		</div>
@@ -351,14 +351,14 @@
 			</div>
 			<div class="col-1-2">
 				<div class="item">
-					<img src="media/diet.png" alt="diet">
+					<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="media/diet.png" alt="diet">
 					<p class="p2">Даем рекомендации по рациону</p>
 					<p>Контролируем питание, делимся советами по режиму дня</p>
 				</div>
 			</div>
 			<div class="col-1-3">
 				<div class="item">
-					<img src="media/homework.jpg" alt="homework">
+					<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="media/homework.jpg" alt="homework">
 					<p class="p2">Даем все упражнения, домашние задания и проводим эфиры</p>
 					<p>Чтобы вы занимались безопасно, технично и эффективно</p>
 				</div>
@@ -367,7 +367,7 @@
 				<div class="item centered">
 					<p class="p2">Подбираем нагрузку под ваш уровень и цели</p>
 					<p>Проводим тест-тренировку, фиксируем вес и делаем фото на старте</p>
-					<img src="media/selection.png" alt="selection">
+					<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="media/selection.jpg" alt="selection">
 				</div>
 			</div>
 			<div class="col-1-3 adaptive">
@@ -379,7 +379,7 @@
 			</div>
 			<div class="col-1-3 last">
 				<div class="item">
-					<img src="media/motivation.png" alt="motivation">
+					<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="media/motivation.jpg" alt="motivation">
 					<p class="p2">Поддерживаем и мотивируем</p>
 					<p>Чат с тренером, чат сообщества, ответы на любые вопросы, призы для лучших участников</p>
 				</div>
@@ -569,7 +569,7 @@
 			</div>
 			<div class="seventh_background">
 				<div>
-					<img src="media/seventh_background.png" alt="seventh_background">
+					<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="media/seventh_background.png" alt="seventh_background">
 					<img src="media/seventh_background1.png" alt="seventh_background1">
 				</div>
 				<img src="media/challenge.svg" alt="challenge">
@@ -690,7 +690,7 @@
 			</form>
 			<div class="tenth_background">
 				<img src="media/tenth_background.svg" alt="tenth_background">
-				<img src="media/froze.png" alt="froze">
+				<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="media/froze.png" alt="froze">
 				<img src="media/logo.svg" alt="logo">
 				<img src="media/eclipse.svg" alt="eclipse">
 			</div>
@@ -766,6 +766,13 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/intlTelInput.js"></script>
+	<script src="js/blazy.min.js"></script>
+	<script>
+		;(function() {
+			// Initialize
+			var bLazy = new Blazy();
+		 })();
+	</script>
 	<script>
 		var input = document.querySelector("#phone");
 		window.intlTelInput(input, {
