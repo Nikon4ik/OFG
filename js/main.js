@@ -275,6 +275,66 @@ $(function () {
 			},
 		}
 	});
+	$('.feedback_en').validate({
+		rules: {
+			name: {
+				required: true
+			},
+			tel: {
+				required: true,
+				maxlength: "10",
+				minlength: "7",
+			},
+			email: {
+				required: true
+			},
+		},
+		messages: {
+			name: {
+				required: "Enter your name"
+			},
+			tel: {
+				required: "Enter your phone number",
+				number: "Enter the correct phone number",
+				maxlength: jQuery.validator.format("Enter the correct phone number"),
+				minlength: jQuery.validator.format("Enter the correct phone number")
+			},
+			email: {
+				required: "Enter your e-mail",
+				email: "Please enter a valid e-mail"
+			},
+		}
+	});
+	$('.feedback_en1').validate({
+		rules: {
+			name: {
+				required: true
+			},
+			tel: {
+				required: true,
+				maxlength: "10",
+				minlength: "7",
+			},
+			email: {
+				required: true
+			},
+		},
+		messages: {
+			name: {
+				required: "Enter your name"
+			},
+			tel: {
+				required: "Enter your phone number",
+				number: "Enter the correct phone number",
+				maxlength: jQuery.validator.format("Enter the correct phone number"),
+				minlength: jQuery.validator.format("Enter the correct phone number")
+			},
+			email: {
+				required: "Enter your e-mail",
+				email: "Please enter a valid e-mail"
+			},
+		}
+	});
 });
 
 $(window).scroll(function() {
@@ -314,7 +374,6 @@ $(window).scroll(function (event) {
 		current = $(window).scrollTop();
 		var total = 3360;
 		var ele = $(".transformation");
-		console.log({total:total,current:current});
 		var newPosition = -1750 + (current - 3360)*3.03;
 		ele.css({right:newPosition+'px'});
 		if ($(window).width() <= '1530'){

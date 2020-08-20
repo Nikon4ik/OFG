@@ -1197,14 +1197,16 @@ label[for="third_question"]:hover svg path {
 #tenth_screen .heading span {
 	color: #F44D4D;
 }
-#tenth_screen .feedback {
+#tenth_screen .feedback,
+#tenth_screen .feedback_en1 {
 	display: flex;
 	flex-wrap: wrap;
 	width: 445px;
 	margin-top: 100px;
 	position: relative;
 }
-#tenth_screen .feedback input:not([type="tel"]) {
+#tenth_screen .feedback input:not([type="tel"]),
+#tenth_screen .feedback_en1 input:not([type="tel"]) {
 	width: 445px;
 	background-color: rgba(196, 196, 196, 0.03);
 	border: 1px solid rgba(255, 255, 255, 0.03);
@@ -1219,16 +1221,20 @@ label[for="third_question"]:hover svg path {
 	font-size: 18px;
 	line-height: 27px;
 }
-#tenth_screen .feedback input:not([type="tel"]).valid {
+#tenth_screen .feedback input:not([type="tel"]).valid,
+#tenth_screen .feedback_en1 input:not([type="tel"]).valid {
 	border-bottom: 2px solid #FFFFFF;
 }
-#tenth_screen .feedback input:not([type="tel"]).error {
+#tenth_screen .feedback input:not([type="tel"]).error,
+#tenth_screen .feedback_en1 input:not([type="tel"]).error {
 	border-bottom: 2px solid #FF0000;
 }
-#tenth_screen .feedback input:not([type="tel"]):focus {
+#tenth_screen .feedback input:not([type="tel"]):focus,
+#tenth_screen .feedback_en1 input:not([type="tel"]):focus {
 	border-bottom: 2px solid #F44D4D;
 }
-#tenth_screen .feedback input[type="tel"] {
+#tenth_screen .feedback input[type="tel"],
+#tenth_screen .feedback_en1 input[type="tel"] {
 	background-color: rgba(196, 196, 196, 0.03);
 	border: 1px solid rgba(255, 255, 255, 0.03);
 	border-bottom: 2px solid #C4C4C4;
@@ -1241,16 +1247,20 @@ label[for="third_question"]:hover svg path {
 	font-size: 18px;
 	line-height: 27px;
 }
-#tenth_screen .feedback input[type="tel"].valid {
+#tenth_screen .feedback input[type="tel"].valid,
+#tenth_screen .feedback_en1 input[type="tel"].valid {
 	border-bottom: 2px solid #FFFFFF;
 }
-#tenth_screen .feedback input[type="tel"].error {
+#tenth_screen .feedback input[type="tel"].error,
+#tenth_screen .feedback_en1 input[type="tel"].error {
 	border-bottom: 2px solid #FF0000;
 }
-#tenth_screen .feedback input[type="tel"]:focus {
+#tenth_screen .feedback input[type="tel"]:focus,
+#tenth_screen .feedback_en1 input[type="tel"]:focus {
 	border-bottom: 2px solid #F44D4D;
 }
-#tenth_screen .feedback button {
+#tenth_screen .feedback button,
+#tenth_screen .feedback_en1 button {
 	font-family: Circe-Bold, sans-serif;
 	width: 220px;
 	height: 60px;
@@ -1263,7 +1273,8 @@ label[for="third_question"]:hover svg path {
 	text-align: center;
 	margin-top: 15px;
 }
-#tenth_screen .feedback button:hover {
+#tenth_screen .feedback button:hover,
+#tenth_screen .feedback_en1 button:hover {
 	background-color: #942F2F;
 }
 footer {
@@ -1343,21 +1354,24 @@ footer .payment img:last-child {
 }
 
 .md-modal h3 {
-	margin-top: 65px;
+	margin-top: 23px;
+	height: 85px;
 }
 .md-modal .md-close {
 	position: absolute;
 	top: 25px;
 	right: 25px;
 }
-.md-modal .feedback1 {
+.md-modal .feedback1,
+.md-modal .feedback_en {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 	margin-top: 30px;
 	justify-content: center;
 }
-.md-modal .feedback1 input {
+.md-modal .feedback1 input,
+.md-modal .feedback_en input {
 	background-color: rgba(196, 196, 196, 0.03);
 	border: 1px solid rgba(255, 255, 255, 0.03);
 	border-bottom: 2px solid #C4C4C4;
@@ -1371,13 +1385,16 @@ footer .payment img:last-child {
 	font-size: 18px;
 	line-height: 27px;
 }
-.md-modal .feedback1 input.error {
+.md-modal .feedback1 input.error,
+.md-modal .feedback_en input.error {
 		border-bottom: 2px solid #FF0000;
 }
-.md-modal .feedback1 input:focus {
+.md-modal .feedback1 input:focus,
+.md-modal .feedback_en input:focus {
 	border-bottom: 2px solid #F44D4D;
 }
-.md-modal .feedback1 button {
+.md-modal .feedback1 button,
+.md-modal .feedback_en button {
 	font-family: Circe-Bold, sans-serif;
 	width: 100%;
 	height: 60px;
@@ -1390,7 +1407,8 @@ footer .payment img:last-child {
 	text-align: center;
 	margin-top: 15px;
 }
-.md-modal .feedback1 button:hover {
+.md-modal .feedback1 button:hover,
+.md-modal .feedback_en button:hover {
 	background-color: #942F2F;
 }
 .menu {
