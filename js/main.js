@@ -135,19 +135,53 @@ $(function () {
 
 	$('.md-offer2').on('click', function() {
 		if( $(this).hasClass('offer') ) {
-			$('.iframe').attr("src","../../docs/offer.html");
+			$('.iframe').attr("src","../../docs/offer_en.html");
 		}
 		else if ( $(this).hasClass('policy') ) {
-			$('.iframe').attr("src","../../docs/policy.html");
+			$('.iframe').attr("src","../../docs/policy_en.html");
 		}
 		else if ( $(this).hasClass('agreement') ) {
-			$('.iframe').attr("src","../../docs/agreement.html");
+			$('.iframe').attr("src","../../docs/agreement_en.html");
 		}
 		else if ( $(this).hasClass('consent') ) {
-			$('.iframe').attr("src","../../docs/consent.html");
+			$('.iframe').attr("src","../../docs/consent_en.html");
 		}
 		else if ( $(this).hasClass('marathon') ) {
-			$('.iframe').attr("src","../../docs/marathon.html");
+			$('.iframe').attr("src","../../docs/marathon_en.html");
+		}
+	});
+});
+$(function () {
+	$('.md-offer3').on('click', function() {
+		$('.documents').addClass('md-show');
+		document.body.style.overflow = 'hidden';
+	});
+
+	$('.md-close').on('click', function() {
+		$('.documents').removeClass('md-show');
+		document.body.style.overflowY = 'auto';
+	});
+
+	$('.md-overlay').on('click', function() {
+		$('.documents').removeClass('md-show');
+		document.body.style.overflowY = 'auto';
+	});
+
+	$('.md-offer3').on('click', function() {
+		if( $(this).hasClass('offer') ) {
+			$('.iframe').attr("src","../docs/offer_en.html");
+		}
+		else if ( $(this).hasClass('policy') ) {
+			$('.iframe').attr("src","../docs/policy_en.html");
+		}
+		else if ( $(this).hasClass('agreement') ) {
+			$('.iframe').attr("src","../docs/agreement_en.html");
+		}
+		else if ( $(this).hasClass('consent') ) {
+			$('.iframe').attr("src","../docs/consent_en.html");
+		}
+		else if ( $(this).hasClass('marathon') ) {
+			$('.iframe').attr("src","../docs/marathon_en.html");
 		}
 	});
 });
@@ -283,6 +317,10 @@ $(window).scroll(function (event) {
 		console.log({total:total,current:current});
 		var newPosition = -1750 + (current - 3360)*3.03;
 		ele.css({right:newPosition+'px'});
+		if ($(window).width() <= '1530'){
+			var newPosition = -1750 + (current - 3360)*3.7;
+			ele.css({right:newPosition+'px'});
+		}
 	}
 });
 document.querySelector('.menuBar_wrapper').onclick = function(){
